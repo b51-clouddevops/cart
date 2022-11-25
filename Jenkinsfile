@@ -1,3 +1,4 @@
+roboshop-shared-library
 pipeline{
     agent any 
     stages {
