@@ -6,7 +6,7 @@ pipeline{
         stage('Lint Checks') {
             steps {
                 script {
-                    sample.info('Training', 'facebook.com')                  // Use script { when you're using groovy based conventions }
+                    nodejs.lintChecks()                  // Use script { when you're using groovy based conventions }
                 }
                 sh "echo installing jslinst"
                 sh "npm i jslint"   
