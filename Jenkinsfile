@@ -5,7 +5,7 @@ pipeline{
             steps {
                 sh "npm i jslint"   
                 sh "node_modules/jslint/bin/jslint.js server.js || true"
-                sh "Lint Checks Completed"
+                sh "echo Lint Checks Completed"
             }
         } 
         stage('Code Quality Checks') {
@@ -17,3 +17,5 @@ pipeline{
 
     }   // end of stages 
 }  // end of pipelines
+
+
