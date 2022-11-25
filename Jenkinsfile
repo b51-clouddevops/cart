@@ -1,5 +1,5 @@
 @Library('roboshop-shared-library@main') _
 
-nodejs()
+nodejs('cart')
 // No need to mention call, nodejs.call()
 
