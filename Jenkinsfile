@@ -5,6 +5,7 @@ pipeline{
     stages {
         stage('Lint Checks') {
             steps {
+                sample.info("")
                 sh "echo installing jslinst"
                 sh "npm i jslint"   
                 sh "node_modules/jslint/bin/jslint.js server.js || true"
