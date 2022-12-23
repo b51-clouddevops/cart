@@ -2,6 +2,6 @@
 
 env.REPONAME="cart"
 env.TERRAFORM_DIR="tf-mutable"
-maven()
+terraform()
 // No need to mention call, nodejs.call()
 
